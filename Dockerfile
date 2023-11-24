@@ -10,7 +10,7 @@ COPY requirements.txt /requirements.txt
 
 RUN cd /
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-RUN mkdir /Moviesfgfu-bot
-WORKDIR /Moviesfgfu-bot
+RUN mkdir /Moviesfgfu-Bot
+WORKDIR /Moviesfgfu-Bot
 COPY start.sh /start.sh
 CMD ["/bin/bash", "/start.sh"]
